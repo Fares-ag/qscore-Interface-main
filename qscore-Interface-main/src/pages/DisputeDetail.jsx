@@ -9,6 +9,7 @@ import { CalendarOutlined } from "@ant-design/icons";
 import DisputeCard from "../components/DisputeCard";
 import DisputeMessage from "../DisputeMessage";
 
+//Dispute Detail
 const DisputeDetail = () => {
   const handleAddCenterClick = () => {
     console.log("Add Center button clicked");
