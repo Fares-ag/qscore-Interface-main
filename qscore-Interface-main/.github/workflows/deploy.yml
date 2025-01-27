@@ -1,0 +1,33 @@
+name: Deploy React App to AWS EC2
+
+on:
+  push:
+    branches:
+      - aws-staging  # Trigger this workflow only for the `aws-staging` branch
+
+jobs:
+  deploy:
+    name: Deploy to EC2
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up SSH Agent
+      - name: Set up SSH Agent
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.aws-ssh-rsa }}
+
+      # Step 3: Deploy to EC2 Instance
+      - name: Execute Deploy Script on EC2
+        uses: appleboy/ssh-action@v0.1.5
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ubuntu
+          port: 22
+          script: |
+            cd /var/www/qscore-frontend
+            bash deploy.sh

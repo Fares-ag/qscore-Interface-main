@@ -1,0 +1,164 @@
+/* Button.css */
+
+.button {
+  display: inline-flex; /* Flexbox layout */
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  outline: none;
+}
+
+.button .button-icon {
+  margin-right: 8px; /* Adjust space between icon and text */
+  font-size: 18px; /* Icon size */
+}
+
+.button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.button.small {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.button.medium {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.button.large {
+  height: 44px;
+  width: 450px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 20px;
+}
+
+.button.primary {
+  background-color: #0d2a76;
+  font-size: 15px;
+  width: 466px;
+  height: 44px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 6px;
+  color: white;
+}
+
+.cancel-button {
+  background-color: transparent !important;
+  font-size: 15px;
+  width: 150px;
+  height: 54px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 8px;
+  outline: 1px solid #858d9d !important;
+  color: #232323 !important;
+}
+
+.update-button {
+  background-color: #0d2a76;
+  font-size: 15px;
+  width: 150px;
+  height: 54px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #858d9d;
+  color: #ffffff;
+}
+
+.update-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.cancel-button:hover {
+  background-color: #0d2a76;
+  color: #ffffff;
+}
+
+.button.primary-responsive {
+  background-color: #0d2a76;
+  font-size: 15px;
+  width: 366px;
+  height: 44px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 6px;
+  color: white;
+}
+
+.button.secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.button.danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.button.center {
+  background-color: #0d2a76 !important;
+  font-size: 16px;
+  width: 187px;
+  height: 48px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 8px;
+  color: white;
+}
+
+.button-icon {
+  margin-right: 8px; /* Adjust space between icon and text */
+  font-size: 18px; /* Icon size */
+}
+
+/*Succes Button */
+
+.button.success {
+  background-color: #0d2a76 !important;
+  font-size: 15px;
+  width: 320px;
+  height: 47px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 6px;
+  color: white;
+}
+
+.button.cancel-edit {
+  background-color: transparent !important;
+  font-size: 15px;
+  width: 160px;
+  height: 47px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 1px solid #858d9d;
+  border-radius: 6px;
+  color: #000 !important;
+}
+
+.button.confirm-edit {
+  background-color: #0d2a76 !important;
+  font-size: 15px;
+  width: 160px;
+  height: 47px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 6px;
+  color: white;
+}

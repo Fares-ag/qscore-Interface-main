@@ -1,0 +1,79 @@
+.basic-card {
+  display: flex;
+  width: 100%;
+}
+
+.customer-card {
+  width: 100%; /* Let the card take up full available width inside the grid column */
+  max-width: 300px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  font-family: "Arial", sans-serif;
+  color: #000;
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+.customer-card:hover {
+  transform: scale(1.05); /* Zooms in by 5% */
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid #0d2a76;
+}
+
+.customer-card p {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.customer-card svg {
+  margin-right: 10px; /* Space between the SVG and the text */
+}
+
+.ticket-id {
+  width: 100%;
+  text-align: center;
+  color: #151515;
+  font-weight: bold;
+  font-size: 14px;
+  padding-bottom: 16px;
+  border-bottom: 1px dotted #c2c6ce;
+}
+
+.customer-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #151515;
+  font-size: 18px;
+  font-weight: medium;
+  padding-bottom: 16px;
+  text-align: center;
+}
+
+.issue-description {
+  color: #151515;
+  font-weight: 500;
+  font-size: 16px;
+  padding-top: 16px;
+  padding-bottom: 18px;
+}
+
+.customer-email,
+.customer-phone {
+  font-weight: medium;
+  font-size: 14px;
+  color: #151515;
+  padding-bottom: 18px;
+}
+
+.appointment-date {
+  font-weight: medium;
+  font-size: 14px;
+  color: #151515;
+}
+
+.customer-card .anticon {
+  font-weight: medium;
+  color: #151515;
+}

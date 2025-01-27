@@ -1,0 +1,72 @@
+.filters-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.filter-search {
+  margin-left: auto;
+  max-width: 300px;
+  flex-shrink: 0;
+}
+
+.filter-button:hover,
+.filter-button.active {
+  background-color: #ecf3fb;
+  color: #000000;
+}
+
+.filter-dropdown {
+  background-color: transparent;
+  color: #575757;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-dropdown:hover {
+  background-color: #ecf3fb;
+  color: #000000;
+}
+
+.filter-dropdown:focus {
+  outline: none;
+  border-color: transparent;
+}
+
+.filter-search {
+  width: 200px;
+  height: 40px;
+}
+
+.filter-search .ant-input {
+  border-radius: 5px;
+  border: 1px solid #dce0e6;
+}
+
+.filter-search .ant-input-search-button {
+  background-color: #858d9d;
+  border-color: #858d9d;
+  color: #fff;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.filter-search .ant-input-search-button:hover {
+  background-color: #858d9d;
+  border-color: #858d9d;
+}
+
+.ant-input-prefix {
+  color: #858d9d;
+}

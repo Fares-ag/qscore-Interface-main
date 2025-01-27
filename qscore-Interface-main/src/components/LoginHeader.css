@@ -1,0 +1,22 @@
+/* Header container */
+.login-header {
+  position: absolute; /* Fixed at the top */
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 60px;
+  background-color: transparent; /* Optional background color */
+  display: flex;
+  align-items: center; /* Center logo vertically */
+  padding-top: 30px;
+  margin-left: 10%;
+}
+
+/* Logo styling */
+.login-header-logo img {
+  display: flex;
+  flex: 1;
+  height: 40px;
+  padding-top: 20px;
+  width: auto; /* Maintain aspect ratio */
+}

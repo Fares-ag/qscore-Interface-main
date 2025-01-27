@@ -1,0 +1,116 @@
+/* Container styles */
+.time-selection-container {
+  width: 100%;
+  margin: 0 auto;
+  max-height: 80vh; /* Restrict maximum height for better control */
+  overflow-y: auto; /* Enables scrolling */
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fff;
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+/* Row styles */
+.time-row {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-bottom: 10px;
+}
+
+.time-row:last-child {
+  border-bottom: none;
+}
+
+/* Day and checkbox section */
+.day-section {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.day-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.checkbox-container {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  gap: 8px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  accent-color: #333;
+}
+
+.checkbox-container label {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Time input styles */
+.time-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.time-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+  background-color: #fafafa;
+  border: 2px dashed #d3d3d3;
+  border-radius: 8px;
+}
+
+.time-input label {
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.time-input input {
+  width: 120px;
+  padding: 8px;
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+  background-color: #fafafa;
+  border: none;
+}
+
+.time-input input:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+.time-input input:hover {
+  background-color: #f9f9f9;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .time-selection-container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .time-inputs {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

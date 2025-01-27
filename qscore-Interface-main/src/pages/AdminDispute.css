@@ -1,0 +1,40 @@
+.disputes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 16px;
+  padding: 20px;
+  justify-items: center;
+}
+
+/* Scoped styles for AdminDispute page */
+.admin-dispute-page .filters-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Optional, adjusts the gap between elements */
+  width: 100%; /* Ensure it takes up the full width */
+}
+
+.admin-dispute-page .calendar-button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.admin-dispute-page .calendar-button .anticon {
+  font-size: 20px;
+  color: #1890ff; /* Blue color */
+}
+
+/* Optional: If you want to style the search bar */
+.admin-dispute-page .search-bar {
+  flex: 1; /* Allows search bar to take up remaining space */
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.admin-dispute-page .filters-actions {
+  display: flex;
+  align-items: center; /* Align items (like the calendar button) vertically */
+  gap: 10px; /* Space between button(s) */
+}

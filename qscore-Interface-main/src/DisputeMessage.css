@@ -1,0 +1,42 @@
+.message-box-container {
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.message-box-title {
+  color: #151515;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.message-box-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.message-box-textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #e0e2e7;
+  border-radius: 4px;
+  resize: none;
+}
+
+.message-box-display {
+  margin-top: 16px;
+  padding: 12px;
+  background-color: #e0e2e7;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.message-box-subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}

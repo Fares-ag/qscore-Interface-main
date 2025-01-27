@@ -1,0 +1,132 @@
+/* Container for the entire login page */
+.login-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width of the viewport */
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in width/height calculations */
+  gap: 20px; /* Space between form and image */
+  overflow: hidden; /* Prevent overflow if content gets too large */
+  position: relative;
+}
+
+/* Left side - Login form */
+.login-form {
+  flex: 1; /* Take available space */
+  max-width: 450px; /* Limit the width of the form */
+  width: 100%; /* Ensure the form takes up the full available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between elements */
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding is included in width/height calculations */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background: #fff;
+  z-index: 2; /* Ensure the form stays on top of any overlapping elements */
+  position: relative; /* Position the form normally, not absolute */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+/* Right side - Image */
+.login-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.login-image img {
+  max-width: 100%; /* Ensure image scales correctly */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Prevent distortion */
+}
+
+/* Styling for the h1 */
+h1 {
+  font-family: "Urbanist", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0;
+  text-align: center;
+}
+
+.second-h {
+  font-family: "Urbanist", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* Logo inside h1 */
+h1 .logo img {
+  width: 120px;
+  height: auto;
+  margin-left: 10px;
+}
+
+/* Styling for "Forgot Password" */
+.forgetPassword {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.forgetPassword a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.forgetPassword a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .login-container {
+    display: flex; /* Ensure flexbox is enabled */
+    flex-direction: column; /* Stack form vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Take full height of the viewport */
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in the box model */
+  }
+
+  .login-form {
+    width: 80%; /* Set form width to be smaller than the container */
+    max-width: 400px; /* Optional: Limit the form's max width */
+    margin: 0; /* Remove any default margins */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .login-container {
+    flex-direction: column; /* Stack form vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Ensure the container takes up the full height */
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in box sizing */
+  }
+
+  .login-form {
+    width: 90%; /* Full width for smaller screens */
+    max-width: 350px; /* Optional: Limit form width on very small screens */
+    margin-top: 0; /* Remove any top margin */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Adjust font size */
+  }
+
+  .second-h {
+    font-size: 0.9rem; /* Adjust font size */
+  }
+}

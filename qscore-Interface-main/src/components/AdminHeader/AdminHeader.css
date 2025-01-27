@@ -1,0 +1,66 @@
+.adminHeader-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.admin-header .header-icon {
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.h1-button {
+  display: flex;
+  font-size: 24px;
+  color: #1d1f2c;
+  font-weight: 500;
+  gap: 20px;
+  padding: 4px;
+}
+.add-center-button {
+  background-color: #0d2a76;
+  color: #fff;
+  border-radius: 5px;
+  width: 130px;
+  height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.filter-button:hover,
+.filter-button.active {
+  background-color: #ecf3fb;
+  color: #000000;
+}
+
+.filter-search {
+  width: 200px;
+  height: 40px;
+}
+
+.filter-search .ant-input {
+  border-radius: 5px;
+  border: 1px solid #dce0e6;
+}
+
+.filter-search .ant-input-search-button {
+  background-color: #858d9d;
+  border-color: #858d9d;
+  color: #fff;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.filter-search .ant-input-search-button:hover {
+  background-color: #858d9d;
+  border-color: #858d9d;
+}
+
+.ant-input-prefix {
+  color: #858d9d;
+}

@@ -1,0 +1,66 @@
+/* Dashboard Layout Container */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden; /* Prevents content spilling */
+}
+
+/* Dashboard Body */
+.dashboard-body {
+  display: flex;
+  flex: 1;
+  margin-top: 60px; /* Matches the header height to prevent overlap */
+  height: calc(100vh - 60px); /* Adjust height for the remaining space */
+}
+
+/* Sidebar */
+.dashboard-body > .sidebar {
+  flex: 0 0 250px; /* Sidebar width */
+  height: 100%; /* Full height */
+  overflow-y: auto;
+}
+
+/* Main Section */
+.dashboard-main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  background-color: #f8f9fa;
+}
+
+/* Content */
+.dashboard-content {
+  padding: 1rem;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.dashboard-content,
+.dashboard-body > .sidebar {
+  scrollbar-width: thin;
+  scrollbar-color: #ccc #f8f9fa;
+}
+
+.dashboard-content::-webkit-scrollbar,
+.dashboard-body > .sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dashboard-content::-webkit-scrollbar-thumb,
+.dashboard-body > .sidebar::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-body {
+    flex-direction: column; /* Stack sidebar and main content vertically */
+  }
+
+  .dashboard-body > .sidebar {
+    flex: 0 0 auto;
+    height: auto; /* Adjust height for collapsed view */
+  }
+}

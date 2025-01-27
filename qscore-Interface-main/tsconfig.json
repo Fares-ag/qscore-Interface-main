@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "allowJs": true,       // Allow JavaScript files in the project
+      "checkJs": false,      // Avoid type-checking JavaScript files
+      "noEmit": true,        // Prevent emitting compiled files (useful for mixed projects)
+      "jsx": "react-jsx",    // JSX setting for React
+      "strict": true,        // Optional: Enforce strict type-checking for TypeScript files
+      "resolveJsonModule": true,
+      "esModuleInterop": true
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "dist", "**/*.test.js"]
+  }
+  

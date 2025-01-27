@@ -1,0 +1,65 @@
+/* InputField.css */
+
+.input-field {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+.input {
+  padding: 1px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3 ease;
+}
+
+.input:focus {
+  border-color: var(--focus-border, #3170f9); /* Custom focus color */
+  box-shadow: 0 0 5px rgba(49, 112, 249, 100%); /* Optional shadow for better visual feedback */
+}
+
+.input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.input-field.small .input {
+  height: 44px;
+  width: 350px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-weight: 500;
+  line-height: 18px;
+  padding: 1px;
+  padding-left: 15px;
+  font-size: 12px;
+}
+
+.input-field.medium .input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.input-field.large .input {
+  padding: 15px;
+  font-size: 20px;
+}
+
+.input.error {
+  border-color: #dc3545;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: 5px;
+}

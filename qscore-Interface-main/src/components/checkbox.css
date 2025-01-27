@@ -1,0 +1,20 @@
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  border: 1px;
+  border-radius: 4px #cccccc;
+  margin-right: 10px;
+  cursor: pointer;
+  accent-color: #007bff; /* Custom color when checked */
+}
+
+.checkbox-label {
+  font-size: 16px;
+  color: #aaaaaa;
+  font-family: Arial, sans-serif;
+}

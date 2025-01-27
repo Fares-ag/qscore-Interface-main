@@ -1,0 +1,140 @@
+/* General Table Styling */
+.ant-table {
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+/* Table Header Styling */
+.ant-table-thead > tr > th {
+  background-color: #f7f9fc; /* Light grey background */
+  color: #5b5b5b; /* Dark grey text */
+  font-weight: 600;
+  text-align: left;
+  padding: 14px;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 14px;
+}
+
+/* Table Row Styling */
+.ant-table-tbody > tr > td {
+  text-align: left;
+  padding: 12px 14px;
+  color: #333333; /* Dark grey for content */
+  font-size: 14px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+/* Link styling for the Address column */
+.ant-table-tbody a {
+  color: #0d2a76;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.ant-table-tbody a:hover {
+  color: #09245a;
+}
+
+/* Revenue column specific styling */
+.revenue-cell {
+  color: #00b894; /* Green for revenue */
+  font-weight: 600;
+}
+
+/* Status switch */
+.ant-switch {
+  background-color: #cccccc;
+}
+
+.ant-switch-checked {
+  background-color: #00b894;
+}
+
+/* Action column icons */
+.table-action-icons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.table-action-icons .anticon {
+  color: #8c8c8c;
+  cursor: pointer;
+}
+
+.table-action-icons .anticon:hover {
+  color: #595959;
+}
+
+/* Pagination styling */
+.ant-pagination-item-active {
+  background-color: #0d2a76;
+  border-color: #0d2a76;
+}
+
+.ant-pagination-item-active a {
+  color: #ffffff;
+}
+
+/* Highlight rows on hover */
+.ant-table-tbody > tr:hover {
+  background-color: #f9fafc;
+  cursor: pointer;
+}
+
+.ant-switch-checked {
+  background-color: #34c759 !important; /* Green when on */
+}
+
+/*ICONS*/
+.table-action-icons {
+  display: flex;
+  gap: 10px; /* Space between icons */
+}
+
+.table-action-icons i {
+  font-size: 20px; /* Adjust icon size */
+  cursor: pointer; /* Adds a pointer cursor on hover */
+  transition: color 0.3s ease; /* Smooth color change */
+}
+
+.edit-icon {
+  color: #4caf50; /* Green for the edit icon */
+}
+
+.delete-icon {
+  color: #f44336; /* Red for the delete icon */
+}
+
+.table-action-icons i:hover {
+  color: #000; /* Change color on hover (optional) */
+}
+/* Media Query for Small Screens */
+@media screen and (max-width: 768px) {
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    padding: 10px 8px; /* Reduce padding */
+    font-size: 12px; /* Smaller font size */
+  }
+
+  .table-action-icons .anticon {
+    font-size: 16px; /* Smaller icons */
+  }
+
+  .revenue-cell {
+    font-size: 12px; /* Smaller text for revenue */
+  }
+}
+
+/* Media Query for Extra Small Screens */
+@media screen and (max-width: 480px) {
+  .ant-table {
+    font-size: 10px; /* Further reduce font size */
+  }
+
+  .table-action-icons .anticon {
+    font-size: 14px; /* Even smaller icons */
+  }
+}
