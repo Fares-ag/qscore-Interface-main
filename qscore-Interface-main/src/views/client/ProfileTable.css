@@ -1,0 +1,175 @@
+/* Container for both sections */
+.profile-table {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 1.5rem;
+}
+
+/* Profile Section Styling */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  min-height: 500px;
+}
+
+.profile-header {
+  color: #1d1f2c;
+  text-align: left;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 155.556% */
+  letter-spacing: 0.18px;
+}
+
+.profile-image {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  align-self: center;
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 16px;
+  border-bottom: 1px dotted #c2c6ce;
+}
+
+/* Form Section Styling */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  min-height: 500px;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  padding: 0.75rem;
+  background-color: #f9f9f9;
+  color: #000000;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.form-button {
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #0056b3;
+}
+
+/* Icon with Label and Text Styling */
+.icon-label-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.info-icon {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+.label-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-label {
+  margin: 0;
+  color: #545454;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.07px;
+}
+
+.icon-description {
+  color: #555;
+  margin-top: 0.5rem;
+  color: #151515;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.07px;
+}
+
+.text-button-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0; /* Add spacing below the inputs */
+}
+
+.form-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.secondary-button {
+  display: flex;
+  background-color: #007bff;
+  color: #fff;
+  width: 174px;
+  height: 40px;
+  padding: 10px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+  background: #0d2a76;
+}
+
+.secondary-button:hover {
+  background-color: #0056b3;
+}
+
+.button-icon {
+  margin-left: 0.5rem; /* Spacing between text and icon */
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
+}

@@ -12,6 +12,16 @@
   align-items: center;
 }
 
+.edit-button {
+  width: 70px;
+  padding: 10px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+  background-color: #0d2a76;
+}
+
 .h1-button {
   display: flex;
   font-size: 24px;

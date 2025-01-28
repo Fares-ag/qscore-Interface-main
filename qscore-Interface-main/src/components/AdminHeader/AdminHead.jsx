@@ -10,7 +10,7 @@ const AdminHeader = ({
   showSearch = false,
   onSearch = () => {},
   onButtonClick = () => {},
-  buttonClass = "cancel-button",
+  buttonClass = "edit-button",
   showButton = true,
   buttonIcon = "",
 }) => (
@@ -28,7 +28,7 @@ const AdminHeader = ({
       <Button
         text={buttonLabel}
         onClick={onButtonClick}
-        className={buttonClass}
+        className="{buttonClass}"
         icon={buttonIcon}
       />
     )}

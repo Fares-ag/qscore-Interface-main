@@ -1,0 +1,160 @@
+/* Blur effect for the background */
+.blurred {
+  filter: blur(5px);
+  pointer-events: none; /* Prevent interaction with blurred content */
+}
+
+/* Existing styles... */
+
+.add-inspection-center {
+  width: 98.5%;
+  margin: auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+}
+
+.form-container {
+  margin-top: 1.5rem;
+}
+
+.form-header {
+  padding: 20px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.form-container h2 {
+  font-size: 1.2rem;
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: flex;
+  flex: 1 1 calc(50% - 1rem);
+  flex-direction: column;
+  min-width: 300px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Ensure consistent styling for all inputs and dropdowns */
+.form-group input,
+.form-group select,
+.custom-input input,
+.custom-input button {
+  font-size: 1rem; /* Ensure consistent font size */
+  padding: 0.7rem; /* Same padding for inputs, selects, and buttons */
+  border: 1px solid #e0e2e7;
+  border-radius: 8px; /* Same border radius */
+  outline: none;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+  transition: border-color 0.3s;
+}
+
+/* Ensure buttons match the inputs */
+.styled-input-button,
+.custom-button {
+  font-size: 1rem;
+  padding: 0.7rem;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  border: 1px solid #e0e2e7;
+  cursor: pointer;
+  width: 100%;
+  transition: border-color 0.3s;
+}
+
+/* Focus effect for inputs and buttons */
+.form-group input:focus,
+.form-group select:focus,
+.custom-input input:focus,
+.custom-button:focus,
+.styled-input-button:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none;
+}
+
+/* Custom Input for static text and dynamic input */
+.custom-input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+}
+
+.custom-input input {
+  flex-grow: 1;
+  min-width: 50px;
+  border: none;
+  outline: none;
+  background-color: #002366;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.custom-input input::placeholder {
+  color: #b0b0b0;
+  font-size: 14px;
+}
+
+.add-inspection-center label {
+  font-size: 1rem; /* Ensure consistent font size */
+  font-weight: bold; /* Ensure uniform font weight */
+  margin-bottom: 0.5rem; /* Maintain space below the label */
+  color: #000; /* Keep color consistent */
+}
+
+/* Disable user interactions */
+.disabled {
+  pointer-events: none;
+}
+
+/* Disabled form inputs */
+.disabled input,
+.disabled select,
+.disabled button {
+  pointer-events: none;
+}
+
+/* Blur effect for the form fields */
+.form-container.blur .form-group,
+.form-container.blur .form-group input,
+.form-container.blur .form-group select {
+  filter: blur(5px); /* Blur the form fields */
+  pointer-events: none; /* Prevent interaction with form fields */
+}
+
+/* Don't apply blur to buttons */
+.form-container.blur button {
+  pointer-events: auto; /* Ensure button is clickable */
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    flex: 1 1 100%;
+  }
+}

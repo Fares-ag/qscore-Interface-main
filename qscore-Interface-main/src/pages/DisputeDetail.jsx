@@ -7,7 +7,6 @@ import AdminHeader from "../components/AdminHeader/AdminHead";
 import Filters from "../components/Filters/Filters";
 import { CalendarOutlined } from "@ant-design/icons";
 import DisputeCard from "../components/DisputeCard";
-import DisputeMessage from "../DisputeMessage";
 
 //Dispute Detail
 const DisputeDetail = () => {

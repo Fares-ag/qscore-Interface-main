@@ -1,0 +1,43 @@
+/* Centering the entire page */
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-container h1 {
+  color: #151515;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.center-container h2 {
+  color: #545454;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.image-with-headers {
+  text-align: center; /* Centering the text */
+  padding: 20px;
+  border-radius: 10px; /* optional rounded corners */
+}
+
+h1,
+h2 {
+  margin: 10px 0; /* optional space between headers */
+}
+
+.bank-button {
+  border-radius: 6px;
+  background: #0d2a76;
+  padding: 12px 24px;
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+  margin: 40px 0;
+}

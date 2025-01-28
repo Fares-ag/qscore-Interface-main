@@ -38,7 +38,13 @@ import ListCenterUsers from "./pages/client/User/ListCenterUsers";
 import AdminDispute from "./pages/AdminDispute";
 import CenterAppointment from "./pages/CenterAppointment";
 import DisputeDetail from "./pages/DisputeDetail";
-import DisputeMessage from "./DisputeMessage";
+import ViewBank from "./pages/client/Bank/ViewBank";
+import AddBank from "./pages/client/Bank/AddBank";
+import EditBank from "./pages/client/Bank/EditBank";
+import NoBank from "./pages/client/Bank/NoBank";
+import ProfileDetails from "./pages/client/Profile/ProfileDetails";
+import CenterChangePassword from "./pages/client/Login/CenterChangePassword";
+import CenterMyAccount from "./pages/client/Account/CenterMyAccount";
 
 const App = () => {
   // Checking if the user is logged in using localStorage or another auth state
@@ -145,8 +151,34 @@ const App = () => {
           element={isAuthenticated ? <Navigate to="" /> : <DisputeDetail />}
         />
         <Route
-          path="/admin-dispute-message"
-          element={isAuthenticated ? <Navigate to="" /> : <DisputeMessage />}
+          path="/center-bank"
+          element={isAuthenticated ? <Navigate to="" /> : <ViewBank />}
+        />
+        <Route
+          path="/center-add-bank"
+          element={isAuthenticated ? <Navigate to="" /> : <AddBank />}
+        />
+        <Route
+          path="/center-edit-bank"
+          element={isAuthenticated ? <Navigate to="" /> : <EditBank />}
+        />
+        <Route
+          path="/center-no-bank"
+          element={isAuthenticated ? <Navigate to="" /> : <NoBank />}
+        />
+        <Route
+          path="/center-profile-details"
+          element={isAuthenticated ? <Navigate to="" /> : <ProfileDetails />}
+        />
+        <Route
+          path="/center-change-password"
+          element={
+            isAuthenticated ? <Navigate to="" /> : <CenterChangePassword />
+          }
+        />
+        <Route
+          path="/center-my-account"
+          element={isAuthenticated ? <Navigate to="" /> : <CenterMyAccount />}
         />
       </Routes>
     </Router>
