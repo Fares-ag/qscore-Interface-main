@@ -74,7 +74,7 @@ const CenterSidebar = () => {
         <li
           className={`menu-item ${activeMenu === "inspection" ? "active" : ""}`}
         >
-          <Link to="/appointment" className="menu-link">
+          <Link to="/center-appointment" className="menu-link">
             <span className="icon">
               <svg
                 width="25"
@@ -94,7 +94,7 @@ const CenterSidebar = () => {
             activeMenu === "centerbranches" ? "active" : ""
           }`}
         >
-          <Link to="/centerbranchmanagement" className="menu-link">
+          <Link to="/center/view-branches" className="menu-link">
             <span className="icon">
               <svg
                 width="25"
@@ -140,10 +140,31 @@ const CenterSidebar = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path d="M20 13.01H13V10H14C15.103 10 16 9.103 16 8V4C16 2.897 15.103 2 14 2H10C8.897 2 8 2.897 8 4V8C8 9.103 8.897 10 10 10H11V13.01H4V18H3V22H7V18H6V15.01H11V18H10V22H14V18H13V15.01H18V18H17V22H21V18H20V13.01ZM10 8V4H14L14.002 8H10Z" />
+                <path d="M20 3H7C5.897 3 5 3.897 5 5V7H4C2.897 7 2 7.897 2 9V19C2 20.103 2.897 21 4 21H10C11.103 21 12 20.103 12 19H20C21.103 19 22 18.103 22 17V5C22 3.897 21.103 3 20 3ZM9.997 19H4V9H10L9.997 19ZM19.997 17H12V9C12 7.897 11.103 7 10 7H7V5H20L19.997 17Z" />
               </svg>
             </span>
             <span className="menu-text">Device Management</span>
+          </Link>
+        </li>
+        <li
+          className={`menu-item ${
+            activeMenu === "centerdevice" ? "active" : ""
+          }`}
+        >
+          <Link to="/centerdevicemanagement" className="menu-link">
+            <span className="icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M12 15C10.16 15 10 14.14 10 14H8C8 14.92 8.66 16.55 11 16.92V18H13V16.92C15 16.58 16 15.29 16 14C16 12.88 15.48 11 12 11C10 11 10 10.37 10 10C10 9.63 10.7 9 12 9C13.3 9 13.39 9.64 13.4 10H15.4C15.3865 9.31875 15.1415 8.66241 14.7053 8.13896C14.269 7.61551 13.6676 7.25614 13 7.12V6H11V7.09C9 7.42 8 8.71 8 10C8 11.12 8.52 13 12 13C14 13 14 13.68 14 14C14 14.32 13.38 15 12 15Z" />
+                <path d="M5 2H2V4H4V21C4 21.2652 4.10536 21.5196 4.29289 21.7071C4.48043 21.8946 4.73478 22 5 22H19C19.2652 22 19.5196 21.8946 19.7071 21.7071C19.8946 21.5196 20 21.2652 20 21V4H22V2H5ZM18 20H6V4H18V20Z" />
+              </svg>
+            </span>
+            <span className="menu-text">Withdrawal Request</span>
           </Link>
         </li>
       </ul>

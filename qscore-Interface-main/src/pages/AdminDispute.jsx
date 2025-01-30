@@ -47,7 +47,7 @@ const AdminDispute = () => {
     {
       ticketId: "00002",
       customerName: "Sara Ali",
-      issueDescription: "Missing parts in the order",
+      issueDescription: "Inspection time too long",
       customerEmail: "sara.ali@gmail.com",
       customerPhone: "3367 1234",
       appointmentDate: "26 Jan 2025",
@@ -55,7 +55,7 @@ const AdminDispute = () => {
     {
       ticketId: "00003",
       customerName: "Khaled Omar",
-      issueDescription: "Delivery was delayed",
+      issueDescription: "Inspection time too long",
       customerEmail: "khaled.omar@gmail.com",
       customerPhone: "3367 5678",
       appointmentDate: "27 Jan 2025",
@@ -63,7 +63,7 @@ const AdminDispute = () => {
     {
       ticketId: "00004",
       customerName: "Maha Khan",
-      issueDescription: "Quality of service not up to expectations",
+      issueDescription: "Inspection time too long",
       customerEmail: "maha.khan@gmail.com",
       customerPhone: "3367 8901",
       appointmentDate: "28 Jan 2025",
@@ -71,7 +71,7 @@ const AdminDispute = () => {
     {
       ticketId: "00005",
       customerName: "Ahmed Bilal",
-      issueDescription: "Incorrect product delivered",
+      issueDescription: "Inspection time too long",
       customerEmail: "ahmed.bilal@gmail.com",
       customerPhone: "3367 1122",
       appointmentDate: "29 Jan 2025",
@@ -79,7 +79,7 @@ const AdminDispute = () => {
     {
       ticketId: "00006",
       customerName: "Nora Zahid",
-      issueDescription: "Website crash during order",
+      issueDescription: "Inspection time too long",
       customerEmail: "nora.zahid@gmail.com",
       customerPhone: "3367 2233",
       appointmentDate: "30 Jan 2025",
@@ -87,7 +87,7 @@ const AdminDispute = () => {
     {
       ticketId: "00007",
       customerName: "Zaid Mirza",
-      issueDescription: "No response to queries",
+      issueDescription: "Inspection time too long",
       customerEmail: "zaid.mirza@gmail.com",
       customerPhone: "3367 3344",
       appointmentDate: "31 Jan 2025",
@@ -95,7 +95,7 @@ const AdminDispute = () => {
     {
       ticketId: "00008",
       customerName: "Rana Shah",
-      issueDescription: "Item damaged upon arrival",
+      issueDescription: "Inspection time too long",
       customerEmail: "rana.shah@gmail.com",
       customerPhone: "3367 4455",
       appointmentDate: "1 Feb 2025",

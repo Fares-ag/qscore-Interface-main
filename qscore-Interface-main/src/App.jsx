@@ -45,6 +45,8 @@ import NoBank from "./pages/client/Bank/NoBank";
 import ProfileDetails from "./pages/client/Profile/ProfileDetails";
 import CenterChangePassword from "./pages/client/Login/CenterChangePassword";
 import CenterMyAccount from "./pages/client/Account/CenterMyAccount";
+import EditDeviceView from "./views/platform-admin/Device/EditDeviceView";
+import EditDevices from "./pages/platform-admin/Device/EditDevices";
 
 const App = () => {
   // Checking if the user is logged in using localStorage or another auth state
@@ -111,6 +113,10 @@ const App = () => {
         <Route
           path="/add-device"
           element={isAuthenticated ? <Navigate to="" /> : <AddNewDevice />}
+        />
+        <Route
+          path="/edit-device"
+          element={isAuthenticated ? <Navigate to="" /> : <EditDevices />}
         />
         <Route
           path="/center/view-users"

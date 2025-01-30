@@ -72,7 +72,7 @@ const Sidebar = () => {
         <li
           className={`menu-item ${activeMenu === "inspection" ? "active" : ""}`}
         >
-          <Link to="/center" className="menu-link">
+          <Link to="/view-centers" className="menu-link">
             <span className="icon">
               <svg
                 width="25"
@@ -90,7 +90,7 @@ const Sidebar = () => {
         <li
           className={`menu-item ${activeMenu === "branches" ? "active" : ""}`}
         >
-          <Link to="/branchmanagement" className="menu-link">
+          <Link to="/view-branches" className="menu-link">
             <span className="icon">
               <svg
                 width="25"
@@ -107,7 +107,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li className={`menu-item ${activeMenu === "device" ? "active" : ""}`}>
-          <Link to="/devicemanagement" className="menu-link">
+          <Link to="/view-devices" className="menu-link">
             <span className="icon">
               <svg
                 width="25"
@@ -123,7 +123,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li className={`menu-item ${activeMenu === "dispute" ? "active" : ""}`}>
-          <Link to="/adminDispute" className="menu-link">
+          <Link to="/admin-dispute" className="menu-link">
             <span className="icon">
               <svg
                 width="25"
@@ -137,6 +137,89 @@ const Sidebar = () => {
               </svg>
             </span>
             <span className="menu-text">Dispute Management</span>
+          </Link>
+        </li>
+        <li className={`menu-item ${activeMenu === "dispute" ? "active" : ""}`}>
+          <Link to="/admin-dispute" className="menu-link">
+            <span className="icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M5 22H19C20.103 22 21 21.103 21 20V5C21 3.897 20.103 3 19 3H17C17 2.73478 16.8946 2.48043 16.7071 2.29289C16.5196 2.10536 16.2652 2 16 2H8C7.73478 2 7.48043 2.10536 7.29289 2.29289C7.10536 2.48043 7 2.73478 7 3H5C3.897 3 3 3.897 3 5V20C3 21.103 3.897 22 5 22ZM5 5H7V7H17V5H19V20H5V5Z" />
+                <path d="M11 13.586L9.207 11.793L7.793 13.207L11 16.414L16.207 11.207L14.793 9.79297L11 13.586Z" />
+              </svg>
+            </span>
+            <span className="menu-text">Appointments</span>
+          </Link>
+        </li>
+        <li className={`menu-item ${activeMenu === "dispute" ? "active" : ""}`}>
+          <Link to="/withdrawal" className="menu-link">
+            <span className="icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M12 15C10.16 15 10 14.14 10 14H8C8 14.92 8.66 16.55 11 16.92V18H13V16.92C15 16.58 16 15.29 16 14C16 12.88 15.48 11 12 11C10 11 10 10.37 10 10C10 9.63 10.7 9 12 9C13.3 9 13.39 9.64 13.4 10H15.4C15.3865 9.31875 15.1415 8.66241 14.7053 8.13896C14.269 7.61551 13.6676 7.25614 13 7.12V6H11V7.09C9 7.42 8 8.71 8 10C8 11.12 8.52 13 12 13C14 13 14 13.68 14 14C14 14.32 13.38 15 12 15Z" />
+                <path d="M5 2H2V4H4V21C4 21.2652 4.10536 21.5196 4.29289 21.7071C4.48043 21.8946 4.73478 22 5 22H19C19.2652 22 19.5196 21.8946 19.7071 21.7071C19.8946 21.5196 20 21.2652 20 21V4H22V2H5ZM18 20H6V4H18V20Z" />
+              </svg>
+            </span>
+            <span className="menu-text">Withdrawal Request</span>
+          </Link>
+        </li>
+        <li className={`menu-item ${activeMenu === "dispute" ? "active" : ""}`}>
+          <Link to="/bankaccount" className="menu-link">
+            <span className="icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M2 8V12.001H3V18H2V21H18L21 21.001L22 21V18H21V12.001H22V8L12 2L2 8ZM6 18V12.001H8V18H6ZM11 18V12.001H13V18H11ZM18 18H16V12.001H18V18ZM14 8C13.9999 8.26271 13.9481 8.52283 13.8475 8.76552C13.7469 9.00821 13.5995 9.2287 13.4137 9.41442C13.2279 9.60014 13.0073 9.74744 12.7646 9.84791C12.5219 9.94839 12.2617 10.0001 11.999 10C11.7363 9.99993 11.4762 9.94812 11.2335 9.84753C10.9908 9.74693 10.7703 9.59952 10.5846 9.41371C10.3989 9.2279 10.2516 9.00733 10.1511 8.7646C10.0506 8.52186 9.99893 8.26171 9.999 7.999C9.99913 7.46843 10.21 6.95965 10.5853 6.58458C10.9605 6.20951 11.4694 5.99887 12 5.999C12.5306 5.99913 13.0393 6.21003 13.4144 6.58529C13.7895 6.96055 14.0001 7.46943 14 8Z" />
+              </svg>
+            </span>
+            <span className="menu-text">Bank Account Management</span>
+          </Link>
+        </li>
+        <li className={`menu-item ${activeMenu === "dispute" ? "active" : ""}`}>
+          <Link to="/inspectionManagement" className="menu-link">
+            <span className="icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7 3H9V21H7V3ZM4 3H6V21H4V3ZM10 3H12V21H10V3ZM19.062 20.792L12.839 3.902L14.716 3.21L20.939 20.1L19.062 20.792Z" />
+              </svg>
+            </span>
+            <span className="menu-text">Inspection Management</span>
+          </Link>
+        </li>
+        <li className={`menu-item ${activeMenu === "dispute" ? "active" : ""}`}>
+          <Link to="/adminDispute" className="menu-link">
+            <span className="icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M12.14 2C10.1622 2 8.22879 2.58649 6.58429 3.6853C4.9398 4.78412 3.65808 6.3459 2.9012 8.17317C2.14432 10.0004 1.94629 12.0111 2.33214 13.9509C2.718 15.8907 3.6704 17.6725 5.06893 19.0711C6.46745 20.4696 8.24928 21.422 10.1891 21.8079C12.1289 22.1937 14.1396 21.9957 15.9668 21.2388C17.7941 20.4819 19.3559 19.2002 20.4547 17.5557C21.5535 15.9112 22.14 13.9778 22.14 12C22.14 9.34784 21.0864 6.8043 19.2111 4.92893C17.3357 3.05357 14.7922 2 12.14 2ZM12.14 20C10.5577 20 9.01103 19.5308 7.69543 18.6518C6.37984 17.7727 5.35446 16.5233 4.74896 15.0615C4.14346 13.5997 3.98503 11.9911 4.29371 10.4393C4.6024 8.88743 5.36432 7.46197 6.48314 6.34315C7.60196 5.22433 9.02743 4.4624 10.5793 4.15372C12.1311 3.84504 13.7397 4.00346 15.2015 4.60896C16.6633 5.21447 17.9127 6.23984 18.7918 7.55544C19.6708 8.87103 20.14 10.4177 20.14 12C20.14 14.1217 19.2971 16.1566 17.7969 17.6569C16.2966 19.1571 14.2617 20 12.14 20Z" />
+                <path d="M16.14 10C16.14 9.20435 15.8239 8.44129 15.2613 7.87868C14.6987 7.31607 13.9356 7 13.14 7H8.14V17H10.14V13H11.6L14.27 17H16.67L13.92 12.88C14.5543 12.7092 15.115 12.335 15.5161 11.8147C15.9171 11.2944 16.1363 10.6569 16.14 10ZM13.14 11H10.14V9H13.14C13.4052 9 13.6596 9.10536 13.8471 9.29289C14.0346 9.48043 14.14 9.73478 14.14 10C14.14 10.2652 14.0346 10.5196 13.8471 10.7071C13.6596 10.8946 13.4052 11 13.14 11Z" />
+              </svg>
+            </span>
+            <span className="menu-text">Partner Inquiry</span>
           </Link>
         </li>
       </ul>

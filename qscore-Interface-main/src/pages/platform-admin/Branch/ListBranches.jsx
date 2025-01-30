@@ -37,7 +37,7 @@ const ListBranches = () => {
         <div className="dashboard-main">
           <main className="dashboard-content">
             <AdminHeader
-              title="Branch Management"
+              title="Branches"
               buttonLabel="Add Branch"
               buttonClass="center"
               onButtonClick={handleAddBranchClick}
@@ -56,10 +56,7 @@ const ListBranches = () => {
               onSearchChange={handleSearchChange}
               hideSearch={true}
             />
-            <BranchesView
-              selectedFilter={filter}
-              searchTerm={searchTerm}
-            />
+            <BranchesView selectedFilter={filter} searchTerm={searchTerm} />
           </main>
         </div>
       </div>
