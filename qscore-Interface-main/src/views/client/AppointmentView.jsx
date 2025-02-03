@@ -4,6 +4,7 @@ import { Switch } from "antd"; // Ensure Switch is imported
 import Filters from "../../components/Filters/Filters";
 import MainTable from "../../components/Tables/MainTable";
 import AdminHeader from "../../components/AdminHeader/AdminHead";
+import "./AppointmentView.css";
 
 const AppointmentView = () => {
   // State to manage table data dynamically

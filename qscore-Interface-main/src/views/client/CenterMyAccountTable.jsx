@@ -1,7 +1,7 @@
 import React from "react";
 import { CaretDownOutlined } from "@ant-design/icons";
 import { CaretRightOutlined } from "@ant-design/icons";
-import "./CenterChangePasswordTable.css";
+import "./CenterMyAccountTable.css";
 
 const CenterMyAccountTable = () => {
   return (

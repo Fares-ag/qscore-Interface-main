@@ -26,7 +26,7 @@ const CenterSidebar = () => {
       </div>
 
       <div className="sidebar-header-logo">
-        <img src=".\assets\qScore.png" alt="Logo" />
+        <img src="\src\assets\qScore.png" alt="Logo" />
       </div>
 
       <ul>

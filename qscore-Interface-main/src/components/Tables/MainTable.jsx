@@ -1,13 +1,13 @@
 import React from "react";
 import { Table, Switch } from "antd";
 
-const MainTable = ({ 
-  data, 
-  columns, 
-  loading, 
-  pagination, 
-  onPageChange, 
-  onStatusToggle 
+const MainTable = ({
+  data,
+  columns,
+  loading,
+  pagination,
+  onPageChange,
+  onStatusToggle,
 }) => {
   // Dynamically add the status column if `onStatusToggle` is provided
   const tableColumns = columns.map((col) => {
@@ -33,12 +33,16 @@ const MainTable = ({
       dataSource={data}
       columns={tableColumns}
       loading={loading}
-      pagination={{
-        current: pagination.currentPage,
-        pageSize: pagination.pageSize,
-        total: pagination.totalItems,
-        onChange: onPageChange,
-      }}
+      pagination={
+        pagination
+          ? {
+              current: pagination.currentPage || 1,
+              pageSize: pagination.pageSize || 10,
+              total: pagination.totalItems || 0,
+              onChange: onPageChange,
+            }
+          : false
+      } // Disable pagination if it's undefined
       rowKey="id"
     />
   );
